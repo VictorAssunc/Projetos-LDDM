@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.texugo.racha_conta">
    <application
-        android:label="racha_conta"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Racha Conta"
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
