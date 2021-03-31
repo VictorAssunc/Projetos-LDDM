@@ -1,0 +1,40 @@
+name: app_educativo
+description: Aplicativo educativo voltado para o ensino de letras e números
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  email_validator: ^2.0.1
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.9.0
+  flutter_native_splash: ^1.1.1+1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/
+
+# flutter pub run flutter_launcher_icons:main && flutter pub run flutter_native_splash:create
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/racha_conta_900.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  #background_image: "assets/background.png"
+  image: assets/icon/racha_conta_192.png
+  fullscreen: true
