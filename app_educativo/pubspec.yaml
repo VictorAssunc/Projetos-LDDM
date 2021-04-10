@@ -26,6 +26,14 @@ flutter:
 
   assets:
     - assets/icon/
+#    - assets/images/
+
+  fonts:
+    - family: Balloons
+      fonts:
+        - asset: fonts/Balloons.ttf
+        - asset: fonts/Balloons-Italic.ttf
+          style: italic
 
 # flutter pub run flutter_launcher_icons:main && flutter pub run flutter_native_splash:create
 flutter_icons:
