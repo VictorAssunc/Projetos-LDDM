@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   email_validator: ^2.0.1
   intl: ^0.17.0
+  just_audio: ^0.7.3
 
 dev_dependencies:
   flutter_test:
@@ -26,14 +27,17 @@ flutter:
 
   assets:
     - assets/icon/
+    - assets/songs/numbers/
 #    - assets/images/
 
   fonts:
-    - family: Balloons
+    - family: CHUBBY
       fonts:
-        - asset: fonts/Balloons.ttf
-        - asset: fonts/Balloons-Italic.ttf
-          style: italic
+        - asset: fonts/CHUBBY.ttf
+
+    - family: Modak
+      fonts:
+        - asset: fonts/Modak-Regular.ttf
 
 # flutter pub run flutter_launcher_icons:main && flutter pub run flutter_native_splash:create
 flutter_icons:
