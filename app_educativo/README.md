@@ -1,16 +1,9 @@
-# app_educativo
+# App Educativo
 
 Aplicativo educativo voltado para o ensino de letras e números
 
-## Getting Started
+## Créditos
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Créditos pelos áudios utilizados: [Canal Árvore do Saber](https://www.youtube.com/channel/UCY7kHeF6h_5LVVbpjN1yBOA)
+Vídeo Alfabeto: https://www.youtube.com/watch?v=M2r3ki90bYo
+Vídeo Números: https://www.youtube.com/watch?v=OO9ndl7gA4M

@@ -5,7 +5,6 @@ import 'package:app_educativo/screens/LearnScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:just_audio/just_audio.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -37,14 +36,20 @@ class _HomeState extends State<Home> {
                   child: Column(
                     children: [
                       Image.asset(
-                        "assets/icon/racha_conta_900.png",
+                        "assets/images/lettersCover.png",
                         height: (MediaQuery.of(context).size.width * .8 * 9) / 16,
                         width: double.infinity,
                         fit: BoxFit.fill,
                       ),
                       Text(
-                        "BATATATATATA",
-                        style: TextStyle(height: 5.0, fontFamily: 'Balloons', fontStyle: FontStyle.italic, color: Colors.green),
+                        "LETRAS",
+                        style: TextStyle(
+                          height: 2.0,
+                          fontFamily: 'Modak',
+                          fontStyle: FontStyle.italic,
+                          color: Colors.orange,
+                          fontSize: 30.0,
+                        ),
                       ),
                     ],
                   ),
@@ -59,14 +64,20 @@ class _HomeState extends State<Home> {
                   child: Column(
                     children: [
                       Image.asset(
-                        "assets/icon/racha_conta_900.png",
+                        "assets/images/numbersCover.png",
                         height: (MediaQuery.of(context).size.width * .8 * 9) / 16,
                         width: double.infinity,
                         fit: BoxFit.fill,
                       ),
                       Text(
-                        "BATATATATATA",
-                        style: TextStyle(height: 5.0, fontFamily: 'Balloons', fontStyle: FontStyle.italic, color: Colors.green),
+                        "NÚMEROS",
+                        style: TextStyle(
+                          height: 2.0,
+                          fontFamily: 'Modak',
+                          fontStyle: FontStyle.italic,
+                          color: Colors.orange,
+                          fontSize: 30.0,
+                        ),
                       ),
                     ],
                   ),

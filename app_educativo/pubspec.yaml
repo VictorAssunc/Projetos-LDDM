@@ -28,7 +28,8 @@ flutter:
   assets:
     - assets/icon/
     - assets/songs/numbers/
-#    - assets/images/
+    - assets/songs/letters/
+    - assets/images/
 
   fonts:
     - family: CHUBBY
@@ -43,10 +44,10 @@ flutter:
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icon/racha_conta_900.png"
+  image_path: "assets/icon/icon_192.png"
 
 flutter_native_splash:
   color: "#ffffff"
   #background_image: "assets/background.png"
-  image: assets/icon/racha_conta_192.png
+  image: assets/icon/icon_900.png
   fullscreen: true
