@@ -53,6 +53,7 @@ class _LoginState extends State<Login> {
               ),
               TextFormField(
                 decoration: InputDecoration(labelText: "Senha"),
+                obscureText: true,
                 style: TextStyle(
                   fontSize: 18.0,
                 ),
