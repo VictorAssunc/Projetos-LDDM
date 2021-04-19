@@ -32,10 +32,6 @@ flutter:
     - assets/images/
 
   fonts:
-    - family: CHUBBY
-      fonts:
-        - asset: fonts/CHUBBY.ttf
-
     - family: Modak
       fonts:
         - asset: fonts/Modak-Regular.ttf

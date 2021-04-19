@@ -22,7 +22,7 @@ class _LearnState extends State<Learn> {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             InkWell(
               onTap: () async {
@@ -32,7 +32,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "A",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -45,7 +44,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "B",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -58,7 +56,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "C",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -71,7 +68,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "D",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -79,7 +75,7 @@ class _LearnState extends State<Learn> {
           ],
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             InkWell(
               onTap: () async {
@@ -89,7 +85,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "E",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -102,7 +97,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "F",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -115,7 +109,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "G",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -128,7 +121,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "H",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -136,7 +128,7 @@ class _LearnState extends State<Learn> {
           ],
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             InkWell(
               onTap: () async {
@@ -146,7 +138,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "I",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -159,7 +150,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "J",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -172,7 +162,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "K",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -185,7 +174,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "L",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -193,7 +181,7 @@ class _LearnState extends State<Learn> {
           ],
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             InkWell(
               onTap: () async {
@@ -203,7 +191,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "M",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -216,7 +203,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "N",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -229,7 +215,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "O",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -242,7 +227,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "P",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -250,7 +234,7 @@ class _LearnState extends State<Learn> {
           ],
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             InkWell(
               onTap: () async {
@@ -260,7 +244,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "Q",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -273,7 +256,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "R",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -286,7 +268,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "S",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -299,7 +280,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "T",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -307,7 +287,7 @@ class _LearnState extends State<Learn> {
           ],
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             InkWell(
               onTap: () async {
@@ -317,7 +297,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "U",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -330,7 +309,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "V",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -343,7 +321,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "W",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -356,7 +333,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "X",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -374,7 +350,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "Y",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -387,7 +362,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "Z",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -400,8 +374,20 @@ class _LearnState extends State<Learn> {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            InkWell(
+              onTap: () async {
+                await player.setAsset("assets/songs/numbers/0.mp3");
+                await player.play();
+              },
+              child: Text(
+                "0",
+                style: TextStyle(
+                  color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+                ),
+              ),
+            ),
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/1.mp3");
@@ -410,7 +396,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "1",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -423,7 +408,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "2",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -436,11 +420,15 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "3",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/4.mp3");
@@ -449,16 +437,10 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "4",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/5.mp3");
@@ -467,7 +449,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "5",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -480,7 +461,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "6",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -493,11 +473,15 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "7",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/8.mp3");
@@ -506,16 +490,10 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "8",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/9.mp3");
@@ -524,7 +502,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "9",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -537,11 +514,15 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "10",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/11.mp3");
@@ -550,16 +531,10 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "11",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/12.mp3");
@@ -568,7 +543,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "12",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -581,11 +555,15 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "13",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/14.mp3");
@@ -594,16 +572,10 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "14",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/15.mp3");
@@ -612,7 +584,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "15",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -625,11 +596,15 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "16",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/17.mp3");
@@ -638,16 +613,10 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "17",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/18.mp3");
@@ -656,7 +625,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "18",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -669,11 +637,15 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "19",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
             ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
             InkWell(
               onTap: () async {
                 await player.setAsset("assets/songs/numbers/20.mp3");
@@ -682,7 +654,6 @@ class _LearnState extends State<Learn> {
               child: Text(
                 "20",
                 style: TextStyle(
-                  // color: Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
                   color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
                 ),
               ),
@@ -700,10 +671,10 @@ class _LearnState extends State<Learn> {
         textAlign: TextAlign.center,
         style: TextStyle(
           fontFamily: 'Modak',
-          fontSize: MediaQuery.of(context).size.width * .2,
+          fontSize: MediaQuery.of(context).size.width * .25,
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .1),
+          padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .01),
           child: ListView(
             children: [
               widget.type == LearnLetters ? lettersList : numbersList,

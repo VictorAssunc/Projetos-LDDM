@@ -1,4 +1,4 @@
-import 'package:app_educativo/screens/LoginScreen.dart';
+import 'package:app_educativo/screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -18,7 +18,7 @@ class AppEducativo extends StatelessWidget {
     SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom, SystemUiOverlay.top]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: Home(),
       title: 'App Educativo',
       theme: ThemeData(
         // primaryColor: Colors.orange[400],
