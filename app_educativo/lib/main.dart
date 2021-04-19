@@ -19,7 +19,7 @@ class AppEducativo extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Home(),
-      title: 'App Educativo',
+      title: 'Alfabeto e Números Interativos',
       theme: ThemeData(
         // primaryColor: Colors.orange[400],
         primarySwatch: Colors.orange,
