@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
                             labelText: "Valor",
                           ),
                           keyboardType: TextInputType.number,
-                          textInputAction: TextInputAction.next,
+                          textInputAction: TextInputAction.done,
                           validator: (value) {
                             if (value.isEmpty) {
                               return "A conta deve ter um valor";
@@ -406,7 +406,7 @@ class _BillCardState extends State<BillCard> {
                                                       labelText: "Valor",
                                                     ),
                                                     keyboardType: TextInputType.number,
-                                                    textInputAction: TextInputAction.next,
+                                                    textInputAction: TextInputAction.done,
                                                     validator: (value) {
                                                       if (value.isEmpty) {
                                                         return "A conta deve ter um valor";
