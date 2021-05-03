@@ -1,0 +1,49 @@
+name: controle_contas
+description: App para controle de contas mensal
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  email_validator: ^2.0.1
+  flutter_masked_text: ^0.8.0
+  flutter_password_strength: ^0.1.6
+  intl: ^0.17.0
+  password_strength: ^0.2.0
+  path: ^1.8.0
+  sqflite: ^2.0.0+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.9.0
+  flutter_native_splash: ^1.1.1+1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/
+
+  fonts:
+    - family: Monoround
+      fonts:
+        - asset: assets/font/Monoround.otf
+
+# flutter pub run flutter_launcher_icons:main && flutter pub run flutter_native_splash:create
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon_192.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/icon/icon_900.png
+  fullscreen: true
