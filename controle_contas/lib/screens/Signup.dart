@@ -61,7 +61,6 @@ class _SignupState extends State<Signup> {
 
   bool hidePassword = true;
   bool buttonEnabled = false;
-  bool showPasswordStrength = false;
   double passwordStrength = 0.0;
 
   @override
@@ -145,11 +144,6 @@ class _SignupState extends State<Signup> {
                     passwordStrength = estimatePasswordStrength(passwordController.value.text);
                   });
                 },
-                onTap: () {
-                  setState(() {
-                    showPasswordStrength = true;
-                  });
-                },
                 style: TextStyle(
                   fontSize: 18.0,
                 ),
@@ -166,15 +160,14 @@ class _SignupState extends State<Signup> {
                   return null;
                 },
               ),
-              if (showPasswordStrength)
-                Padding(
-                  padding: EdgeInsets.only(top: 20.0, left: 40.0),
-                  child: LinearProgressIndicator(
-                    backgroundColor: Colors.grey,
-                    value: passwordStrength,
-                    valueColor: barColors.animate(AlwaysStoppedAnimation(passwordStrength)),
-                  ),
+              Padding(
+                padding: EdgeInsets.only(top: 20.0, left: 40.0),
+                child: LinearProgressIndicator(
+                  backgroundColor: Colors.grey,
+                  value: passwordStrength,
+                  valueColor: barColors.animate(AlwaysStoppedAnimation(passwordStrength)),
                 ),
+              ),
               // repeat password
               TextFormField(
                 controller: repeatPasswordController,
