@@ -64,7 +64,14 @@ class _HomeState extends State<Home> {
             },
           ),
         ],
-        title: Text("Controle de Contas"),
+        title: RichText(
+          text: TextSpan(
+            children: [
+              TextSpan(text: "Controle de Contas\n", style: TextStyle(fontSize: 24.0)),
+              TextSpan(text: "Usuário: ${this.user.name}"),
+            ],
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
