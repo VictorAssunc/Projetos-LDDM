@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "963030593031",
+    "project_id": "agenda-contatos-1a35e",
+    "storage_bucket": "agenda-contatos-1a35e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963030593031:android:2a07081d29df2e604844a2",
+        "android_client_info": {
+          "package_name": "com.texugo.agenda_contatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963030593031-4eisub99iuu4vogh4tf8gb6oqr7jfohp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.texugo.agenda_contatos",
+            "certificate_hash": "f9ac6c500880348ad1443f8881b349bd6420824f"
+          }
+        },
+        {
+          "client_id": "963030593031-u5qm14s5h40ck9fb352eevr1p5dml2lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWq5zhv4ukGhxYPa6fDJBxEiORGPip0Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963030593031-u5qm14s5h40ck9fb352eevr1p5dml2lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
