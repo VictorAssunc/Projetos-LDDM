@@ -53,7 +53,7 @@ class _NewContactState extends State<NewContact> {
                   ),
                   keyboardType: TextInputType.name,
                   style: defaultColorTextStyle,
-                  textInputAction: TextInputAction.done,
+                  textInputAction: TextInputAction.next,
                   validator: (value) {
                     if (value.isEmpty) {
                       return "Digite o nome";
@@ -126,12 +126,11 @@ class _NewContactState extends State<NewContact> {
                 ),
                 // phone
                 InternationalPhoneNumberInput(
-                  formatInput: true,
+                  formatInput: false,
                   hintText: "Telefone",
                   initialValue: phone,
                   keyboardAction: TextInputAction.done,
                   keyboardType: TextInputType.numberWithOptions(),
-                  maxLength: 13,
                   onInputChanged: (value) {
                     setState(() {
                       phoneNumber = value.phoneNumber;
@@ -150,7 +149,7 @@ class _NewContactState extends State<NewContact> {
                       return "Digite o número de telefone";
                     }
 
-                    if (value.length < 12) {
+                    if (value.length < 10) {
                       return "Número de telefone incompleto";
                     }
 
@@ -168,49 +167,39 @@ class _NewContactState extends State<NewContact> {
                           ? null
                           : () async {
                               try {
-                                await FirebaseFirestore.instance
-                                    .collection("usuarios")
-                                    .doc(FirebaseAuth.instance.currentUser.uid)
-                                    .collection("contatos")
-                                    .withConverter(
-                                      fromFirestore: (snapshot, _) => Contact.fromJson(snapshot.data()),
-                                      toFirestore: (contact, _) => contact.toJson(),
-                                    )
-                                    .orderBy("id", descending: true)
-                                    .limit(1)
-                                    .get()
-                                    .then((value) {
-                                  setState(() {
-                                    var id = 0;
-                                    if (value.docs.length > 0) {
-                                      id = value.docs.first.get("id");
-                                    }
-                                    nextID = id + 1;
-                                  });
-                                });
+                                DocumentReference reference = FirebaseFirestore.instance.collection("usuarios").doc(FirebaseAuth.instance.currentUser.uid);
 
-                                await FirebaseFirestore.instance
-                                    .collection("usuarios")
-                                    .doc(FirebaseAuth.instance.currentUser.uid)
-                                    .collection("contatos")
-                                    .withConverter(
-                                      fromFirestore: (snapshot, _) => Contact.fromJson(snapshot.data()),
-                                      toFirestore: (contact, _) => contact.toJson(),
-                                    )
-                                    .doc("$nextID")
-                                    .set(
-                                      Contact(
-                                        id: nextID,
-                                        color: RandomColor().randomColor(colorSaturation: ColorSaturation.highSaturation, colorBrightness: ColorBrightness.primary).value,
-                                        name: nameController.value.text.trim().split(" ").map((str) => "${str[0].toUpperCase()}${str.substring(1)}").join(" "),
-                                        email: emailController.value.text,
-                                        address: addressController.value.text.trim().split(" ").map((str) => "${str[0].toUpperCase()}${str.substring(1)}").join(" "),
-                                        cep: cepController.value.text,
-                                        phone: phoneNumber,
-                                        createdAt: DateTime.now(),
-                                        updatedAt: DateTime.now(),
-                                      ),
-                                    );
+                                await FirebaseFirestore.instance.runTransaction((transaction) async {
+                                  DocumentSnapshot snapshot = await transaction.get(reference);
+
+                                  setState(() {
+                                    nextID = snapshot.get("ultimo_id") + 1;
+                                  });
+
+                                  Contact contact = Contact(
+                                    id: nextID,
+                                    color: RandomColor().randomColor(colorSaturation: ColorSaturation.highSaturation, colorBrightness: ColorBrightness.primary).value,
+                                    name: nameController.value.text.trim().split(" ").map((str) => "${str[0].toUpperCase()}${str.substring(1)}").join(" "),
+                                    email: emailController.value.text,
+                                    address: addressController.value.text.trim().split(" ").map((str) => "${str[0].toUpperCase()}${str.substring(1)}").join(" "),
+                                    cep: cepController.value.text,
+                                    phone: phoneNumber,
+                                    createdAt: DateTime.now(),
+                                    updatedAt: DateTime.now(),
+                                  );
+
+                                  transaction.set(
+                                      reference
+                                          .collection("contatos")
+                                          .withConverter(
+                                            fromFirestore: (snapshot, _) => Contact.fromJson(snapshot.data()),
+                                            toFirestore: (contact, _) => contact.toJson(),
+                                          )
+                                          .doc("$nextID"),
+                                      contact);
+
+                                  transaction.update(reference, {"ultimo_id": nextID});
+                                });
                               } on FirebaseAuthException catch (e) {
                                 return showError(context, e.code);
                               }
@@ -222,10 +211,9 @@ class _NewContactState extends State<NewContact> {
                                 ),
                               );
                             },
-                      style: ElevatedButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 15.0)),
                       child: Text(
                         "Criar contato",
-                        style: defaultColorTextStyle,
+                        style: buttonStyle,
                       ),
                     ),
                   ),

@@ -33,9 +33,6 @@ class _SearchContactState extends State<SearchContact> {
 
   @override
   Widget build(BuildContext context) {
-    print("UAI");
-    print(int.tryParse(search));
-    print("UAI");
     return ListView(
       children: [
         Form(

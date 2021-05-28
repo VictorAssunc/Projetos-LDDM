@@ -1,5 +1,6 @@
 import 'package:agenda_contatos/screens/Login.dart';
 import 'package:agenda_contatos/screens/Main.dart';
+import 'package:agenda_contatos/utils/style.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +47,14 @@ class _AgendaContatosState extends State<AgendaContatos> {
             title: 'Controle de Contas',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
-              primarySwatch: Colors.green,
+              primarySwatch: Colors.grey,
+              elevatedButtonTheme: ElevatedButtonThemeData(
+                style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(vertical: 8.0),
+                  primary: Colors.green,
+                  textStyle: buttonStyle,
+                ),
+              ),
             ),
             home: FirebaseAuth.instance.currentUser != null ? Main() : Login(),
           );

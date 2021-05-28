@@ -10,7 +10,25 @@ final headerTextStyle = baseTextStyle.copyWith(
   fontWeight: FontWeight.w600,
 );
 
+final defaultTitleStyle = baseTextStyle.copyWith(
+  color: Colors.white,
+  fontSize: 18.0,
+  fontWeight: FontWeight.w600,
+);
+
 final defaultColorTextStyle = baseTextStyle.copyWith(
+  fontSize: 18.0,
+  fontWeight: FontWeight.w600,
+);
+
+final actionButtonStyle = baseTextStyle.copyWith(
+  color: Colors.white,
+  fontSize: 14.0,
+  fontWeight: FontWeight.w600,
+);
+
+final buttonStyle = baseTextStyle.copyWith(
+  color: Colors.white,
   fontSize: 18.0,
   fontWeight: FontWeight.w600,
 );

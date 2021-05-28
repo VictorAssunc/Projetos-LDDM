@@ -192,7 +192,7 @@ class _LoginState extends State<Login> {
                                     FirebaseFirestore.instance
                                         .collection("usuarios")
                                         .doc(FirebaseAuth.instance.currentUser.uid)
-                                        .set({"id": FirebaseAuth.instance.currentUser.uid});
+                                        .set({"id": FirebaseAuth.instance.currentUser.uid, "lastContact": 0});
                                   } else {
                                     await FirebaseAuth.instance.signInWithEmailAndPassword(
                                       email: emailController.value.text,

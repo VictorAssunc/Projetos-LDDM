@@ -57,7 +57,7 @@ class _MainState extends State<Main> {
         ],
         title: Text(
           "Contatos",
-          style: defaultColorTextStyle,
+          style: defaultTitleStyle,
         ),
       ),
       body: screens[index],
