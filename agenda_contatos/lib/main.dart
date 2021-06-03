@@ -1,10 +1,13 @@
 import 'package:agenda_contatos/screens/Login.dart';
 import 'package:agenda_contatos/screens/Main.dart';
+import 'package:agenda_contatos/utils/calendar.dart';
 import 'package:agenda_contatos/utils/style.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:googleapis/calendar/v3.dart' as googleCalendar;
+import 'package:googleapis_auth/auth_io.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 
@@ -16,6 +19,9 @@ void main() async {
   SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom, SystemUiOverlay.top]);
 
   final Future<FirebaseApp> firebase = Firebase.initializeApp();
+  await clientViaUserConsent(credentials, scopes, prompt).then((AuthClient client) async {
+    calendar = googleCalendar.CalendarApi(client);
+  });
   runApp(AgendaContatos(firebase: firebase));
 }
 

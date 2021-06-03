@@ -90,6 +90,12 @@ class _ContactInfoState extends State<ContactInfo> {
     return "images$path${contact.name.split(" ")[0].toLowerCase()}-$hash.jpg";
   }
 
+  String getPathWithoutFile(Contact contact) {
+    String hash = md5.convert(utf8.encode("${FirebaseAuth.instance.currentUser.uid}-${contact.id}")).toString();
+    String path = hash.substring(0, 4).splitMapJoin("", onMatch: (c) => "${c.group(0)}/");
+    return "images$path";
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,6 +126,10 @@ class _ContactInfoState extends State<ContactInfo> {
                           ),
                           onPressed: () async {
                             try {
+                              if (contact.birthdate != null) {
+                                await calendar.events.delete("primary", contact.eventID);
+                              }
+
                               await FirebaseFirestore.instance
                                   .collection("usuarios")
                                   .doc(FirebaseAuth.instance.currentUser.uid)

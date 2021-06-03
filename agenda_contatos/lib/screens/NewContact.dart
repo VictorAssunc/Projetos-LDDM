@@ -18,7 +18,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'package:googleapis/calendar/v3.dart' as googleCalendar;
-import 'package:googleapis_auth/auth_io.dart';
 import 'package:http/http.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
@@ -483,12 +482,6 @@ class _NewContactState extends State<NewContact> {
                                   end.dateTime = contact.birthdate.add(Duration(days: 1));
                                   end.timeZone = "UTC-3";
                                   event.end = end;
-
-                                  await clientViaUserConsent(credentials, scopes, prompt).then((AuthClient client) async {
-                                    setState(() {
-                                      calendar = googleCalendar.CalendarApi(client);
-                                    });
-                                  });
 
                                   await calendar.events.insert(event, "primary").then((value) async {
                                     if (value.status == "confirmed") {
