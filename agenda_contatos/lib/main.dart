@@ -44,7 +44,7 @@ class _AgendaContatosState extends State<AgendaContatos> {
 
         if (snapshot.connectionState == ConnectionState.done) {
           return MaterialApp(
-            title: 'Controle de Contas',
+            title: 'Agenda de Contatos',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               primarySwatch: Colors.grey,

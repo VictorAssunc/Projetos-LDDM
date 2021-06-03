@@ -15,19 +15,19 @@ class SearchContact extends StatefulWidget {
 }
 
 class _SearchContactState extends State<SearchContact> {
-  GlobalKey<FormState> formKey = new GlobalKey<FormState>();
-  TextEditingController searchController = new TextEditingController();
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  TextEditingController searchController = TextEditingController();
   String search = "";
   bool canSearch = false;
 
-  GlobalKey<FormState> editFormKey = new GlobalKey<FormState>();
-  TextEditingController nameController = new TextEditingController();
-  TextEditingController emailController = new TextEditingController();
-  TextEditingController addressController = new TextEditingController();
-  MaskedTextController cepController = new MaskedTextController(mask: "00.000-000");
-  TextEditingController phoneController = new TextEditingController();
+  GlobalKey<FormState> editFormKey = GlobalKey<FormState>();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController addressController = TextEditingController();
+  MaskedTextController cepController = MaskedTextController(mask: "00.000-000");
+  TextEditingController phoneController = TextEditingController();
   String phoneNumber = "";
-  Contact contact = new Contact();
+  Contact contact = Contact();
 
   bool buttonEnabled = false;
 

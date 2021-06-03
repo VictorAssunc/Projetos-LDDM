@@ -155,23 +155,26 @@ class _ContactCardState extends State<ContactCard> {
                   ),
                 ],
                 color: Color(contact.color).withOpacity(1.0),
-                // TODO: inserir imagem custom
-                // image: DecorationImage(
-                //   alignment: Alignment.center,
-                //   fit: BoxFit.fill,
-                //   image: NetworkImage("https://thispersondoesnotexist.com/image"),
-                // ),
+                image: contact.imagePath == null
+                    ? null
+                    : DecorationImage(
+                        alignment: Alignment.center,
+                        fit: BoxFit.fill,
+                        image: NetworkImage(contact.imagePath),
+                      ),
                 shape: BoxShape.circle,
               ),
               height: 78.0,
               margin: EdgeInsets.symmetric(vertical: 16.0),
               width: 78.0,
-              child: Center(
-                child: Text(
-                  contact.name[0],
-                  style: imageLetterStyle,
-                ),
-              ),
+              child: contact.imagePath == null
+                  ? Center(
+                      child: Text(
+                        contact.name[0],
+                        style: imageLetterStyle,
+                      ),
+                    )
+                  : Container(),
             ),
           ],
         ),

@@ -14,11 +14,11 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  GlobalKey<FormState> formKey = new GlobalKey<FormState>();
-  TextEditingController nameController = new TextEditingController();
-  TextEditingController emailController = new TextEditingController();
-  TextEditingController passwordController = new TextEditingController();
-  TextEditingController repeatPasswordController = new TextEditingController();
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  TextEditingController repeatPasswordController = TextEditingController();
 
   bool hidePassword = true;
   bool buttonEnabled = false;
@@ -192,7 +192,7 @@ class _LoginState extends State<Login> {
                                     FirebaseFirestore.instance
                                         .collection("usuarios")
                                         .doc(FirebaseAuth.instance.currentUser.uid)
-                                        .set({"id": FirebaseAuth.instance.currentUser.uid, "lastContact": 0});
+                                        .set({"id": FirebaseAuth.instance.currentUser.uid, "ultimo_id": 0});
                                   } else {
                                     await FirebaseAuth.instance.signInWithEmailAndPassword(
                                       email: emailController.value.text,
